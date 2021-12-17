@@ -7,20 +7,18 @@ package university;
         private String capital;
         private int capitalPopulation;
 
-        public Countries(String countryName, int area, int population, String capital, int capitalPopulation) {
+
+
+        public Countries(String countryName, int area, int population) {
             SetCountryName(countryName);
             SetArea(area);
             SetPopulation(population);
-            SetCapital(capital);
-            SetCapitalPopulation(capitalPopulation);
         }
-
-        public Countries(String countryName, int area, int population) {
-            this.countryName = countryName;
-            this.area = area;
-            this.population = population;
-        }
-
+    public Countries(String countryName, int area, int population, String capital, int capitalPopulation) {
+        this (countryName, area, population);
+        SetCapital(capital);
+        SetCapitalPopulation(capitalPopulation);
+    }
         public String getCountryName() {
             return countryName;
         }
