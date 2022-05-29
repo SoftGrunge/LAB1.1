@@ -1,5 +1,5 @@
 package university;
-// EfimovDA
+
     public class Countries {
         private String countryName;
         private int area;
