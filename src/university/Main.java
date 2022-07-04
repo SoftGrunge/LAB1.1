@@ -2,6 +2,7 @@ package university;
 
 public class Main {
 //EfimovDA
+    //
     public static void main(String[] args) {
 
         Countries[] array = new Countries[]{
